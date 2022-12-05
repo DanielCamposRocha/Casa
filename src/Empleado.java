@@ -2,10 +2,21 @@ import java.util.Date;
 
 public class Empleado {
 
-    final String nombre;
-    final Date fechaContratacion;
-    int edad;
+    private final String nombre;
+    private final Date fechaContratacion;
+    private int edad;
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public Date getFechaContratacion() {
+        return fechaContratacion;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
 
     public static Empleado crearEmpleado(String nombre, int edad, Date fechaContratacion) {
         if (edad<0)throw new RuntimeException("Un empleado no puede tener edad negativa");
