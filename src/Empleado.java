@@ -1,8 +1,8 @@
 import java.util.Date;
 
 public class Empleado {
-    String nombre;
-    Date fechaContratacion;
+    final String nombre;
+    final Date fechaContratacion;
     int edad;
 
     public Empleado(String name,int edad, Date fechaContratacion) {
