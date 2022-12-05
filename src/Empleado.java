@@ -1,16 +1,17 @@
+import java.time.LocalDate;
 import java.util.Date;
 
-public class Empleado {
+class Empleado {
 
     private final String nombre;
-    private final Date fechaContratacion;
+    private final LocalDate fechaContratacion;
     private int edad;
 
     public String getNombre() {
         return nombre;
     }
 
-    public Date getFechaContratacion() {
+    public LocalDate getFechaContratacion() {
         return fechaContratacion;
     }
 
@@ -28,7 +29,7 @@ public class Empleado {
         else  this.edad = edad;
     }
 
-    public Empleado(String name, int edad, Date fechaContratacion) {
+    public Empleado(String name, int edad, LocalDate fechaContratacion) {
         this.nombre=name;
         this.edad=edad;
         this.fechaContratacion=fechaContratacion;
