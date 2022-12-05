@@ -3,9 +3,14 @@ import java.util.Date;
 public class Empleado {
     String nombre;
     Date fechaContratacion;
-    int edad;
+    private int edad;
 
-    public Empleado(String name,int edad, Date fechaContratacion) {
+    public void setEdad(int edad) {
+        if(edad<0)throw new RuntimeException("un empleado no puede tener edad negativa");
+        else  this.edad = edad;
+    }
+
+    public Empleado(String name, int edad, Date fechaContratacion) {
         this.nombre=name;
         this.edad=edad;
         this.fechaContratacion=fechaContratacion;
